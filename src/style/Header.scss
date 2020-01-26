@@ -5,7 +5,6 @@
   box-shadow: 0 16px 0 black;
   transform: rotateZ(8deg) skew(-2deg, -10deg) translateY(-10%);
   margin: 50px;
-  font-family: 'Black And White Picture', sans-serif;
 }
 
 .Header__body {
@@ -16,8 +15,7 @@
 .Header__title {
   flex: 1;
   padding: 20px 0;
-  font-family: "times new roman", times, serif;
-  font-style: italic;
+  font-family: 'Black And White Picture', sans-serif;
 
   a {
     font-size: 6em;
@@ -33,7 +31,7 @@
       position: absolute;
       top: 0;
       color: white;
-      background: #663399;
+      background: #0044aa;
       overflow: hidden;
       clip: rect(0,900px,0,0);
       display: block;
@@ -42,7 +40,7 @@
 
     &:after {
       left: 3px;
-      text-shadow: -2px 0 red;
+      text-shadow: -2px 0 lime;
       animation: noise-anim 2s infinite linear alternate-reverse;
     }
 
