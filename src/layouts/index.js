@@ -16,6 +16,7 @@ const Layout = ({ children, site }) => (
               <Link data-text={site.siteMetadata.siteName} to="/">
                 {site.siteMetadata.siteName}
               </Link>
+              {/* spot for brand logo*/}
             </h1>
             <div className="Header__summary snipcart-summary snipcart-checkout">
               <div className="Header__summary__title">

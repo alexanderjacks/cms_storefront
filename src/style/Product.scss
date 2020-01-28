@@ -74,26 +74,10 @@
   font-weight: bold;
   font-family: 'Londrina Solid', cursive;
 
-
   &:hover {
+    background: #0055cc;
     text-decoration: underline;
 
-    &:before {
-      content: "Yes now";
-      position: absolute;
-      top: -10px;
-      left: 60%;
-      white-space: nowrap;
-      font-family: "times new roman", times, serif;
-      font-weight: normal;
-      font-style: italic;
-      mix-blend-mode: difference;
-      text-transform: lowercase;
-      text-decoration: overline;
-      color: #00efff;
-      font-size: 2em;
-      animation: blink 6s steps(4, end) infinite alternate-reverse;
-    }
   }
 }
 

@@ -18,7 +18,7 @@
   font-family: 'Londrina Solid', cursive;
 
   a {
-    font-size: 6em;
+    font-size: 3.5em;
     font-weight: bold;
     position: relative;
     color: white;
@@ -26,7 +26,7 @@
     display: block;
     padding: 2px;
 
-    
+
   }
 }
 
@@ -37,30 +37,21 @@
   cursor: pointer;
 
   &:hover {
-    text-decoration: underline;
+    animation: glowy-text 4s infinite;
   }
 }
 
 .Header__summary__line {
-  font-size: 0.8em;
+  font-size: 1.2em;
 }
 
-@keyframes noise-anim {
-  $steps: 20;
-
-  @for $i from 0 through $steps {
-    #{percentage($i * (1 / $steps))} {
-      clip:rect(random(100) + px, 9999px, random(100) + px, 0);
-    }
+@keyframes glowy-text {
+  0% {
+    color: white;
+  }
+  100% {
+    color: gold;
   }
 }
 
-@keyframes noise-anim-2 {
-  $steps: 20;
-
-  @for $i from 0 through $steps{
-    #{percentage($i * (1/$steps))}{
-      clip:rect(random(100) + px, 9999px, random(100) + px, 0);
-    }
-  }
 }
